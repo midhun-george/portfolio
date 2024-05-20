@@ -21,8 +21,13 @@ export class HomeComponent {
 ngOnInit() {
 
 
-  let url = this.router.url;
+  let url = this.router["location"]._basePath;
   console.log(url);
+  if(url == ''){
+    this.imageURL = '../../../../dist/midhun_portfolio/assets/image/midhu.jpg';
+  }else{
+    this.imageURL = 'assets/image/midhu.jpg';
+  }
   const options = {
     strings: [
       'Data<br>Personalisation<br>Real time',
