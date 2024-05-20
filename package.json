@@ -21,8 +21,11 @@
     "@ng-bootstrap/ng-bootstrap": "^15.1.2",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.3.3",
+    "ng-animate": "^1.0.0",
+    "ngx-teximate": "^0.3.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
+    "typed.js": "^2.1.0",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {

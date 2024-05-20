@@ -1,0 +1,100 @@
+
+.profileImageContainer {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    padding: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .profileImageContainer img {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 350px;
+    height: 350px;
+    -webkit-box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+            box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+  }
+  
+  .profileDescription {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    padding: 0 15px;
+    width: 100%;
+  }
+  
+  .profileDescription .greeting {
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
+  .profileDescription h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin: 24px 0;
+  }
+  
+  .profileDescription h1 span {
+    color: #8444df;
+  }
+  
+  .profileDescription .smallBio {
+    letter-spacing: 1px;
+    color: #97981c;
+    font-size: 16px;
+    min-width: 250px;
+    line-height: 1.4;
+  }
+  
+  .profileDescription .smallBio span {
+    color: #8444df;
+    font-size: 1.1rem;
+  }
+  .socialsList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  .socialsResume{
+    display: flex;
+  }
+  .socialsList li {
+    margin: 0 10px;
+  }
+
+  .socialsList li a {
+    
+    background-color: white;
+    border-radius: 6px;
+    color: #8444df;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0px 4px 6px rgba(134, 151, 168, 0.1);
+            box-shadow: 0px 4px 6px rgba(134, 151, 168, 0.1);
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    display: inline-block;
+  }
+  
+  .socialsList li a:hover {
+    -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .socialsList li a:focus {
+    border-color: #80bdff;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
