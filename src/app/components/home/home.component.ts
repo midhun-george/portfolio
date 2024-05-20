@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import Typed from 'typed.js';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,11 +9,20 @@ import Typed from 'typed.js';
 })
 
 export class HomeComponent {
+  
+  imageURL:any='';
+  hamburger = document.querySelector(".hamburger");
+  navLinks = document.querySelector(".nav-links");
+  links = document.querySelectorAll(".nav-links li");
 
-   hamburger = document.querySelector(".hamburger");
-navLinks = document.querySelector(".nav-links");
-links = document.querySelectorAll(".nav-links li");
+  constructor(private router:Router){
+
+  }
 ngOnInit() {
+
+
+  let url = this.router.url;
+  console.log(url);
   const options = {
     strings: [
       'Data<br>Personalisation<br>Real time',
