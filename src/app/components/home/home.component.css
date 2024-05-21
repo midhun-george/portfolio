@@ -30,6 +30,9 @@
             flex: 0 0 50%;
     padding: 0 15px;
     width: 100%;
+    border: 3px solid #FFF;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
   
   .profileDescription .greeting {
@@ -37,6 +40,14 @@
     font-size: 1rem;
     line-height: 1.2;
   }
+  .typings{
+    width: 50%;
+    text-align: center;
+    color: #FFF;
+  }
+  span.typed-element {
+    font-weight: bold;
+}
   
   .profileDescription h1 {
     font-size: 2.5rem;
@@ -45,12 +56,17 @@
   }
   
   .profileDescription h1 span {
-    color: #8444df;
+    color: #c7adeb;
+    font-weight: bold;
   }
+  span.surname {
+    color: #f1f4f4 !important;
+}
+
   
   .profileDescription .smallBio {
     letter-spacing: 1px;
-    color: #97981c;
+    color: #FFF;
     font-size: 16px;
     min-width: 250px;
     line-height: 1.4;
@@ -68,6 +84,9 @@
   }
   .socialsResume{
     display: flex;
+    height: 30%;
+    place-content: space-between;
+    align-items: self-end;
   }
   .socialsList li {
     margin: 0 10px;
@@ -97,3 +116,14 @@
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   }
   
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+}
+
+
+
+
+
+

@@ -30,9 +30,10 @@ ngOnInit() {
   }
   const options = {
     strings: [
-      'Data<br>Personalisation<br>Real time',
-      'Segment<br>Omnichannel<br>Automation',
-      'Data Science<br> Personalisation<br>Machine learning'],
+      'Frontend Developer',
+      'Angular Developer',
+      'Web Developer',
+      'Freelancer'],
     typeSpeed: 100,
     backSpeed: 20,
     showCursor: true,

@@ -8,10 +8,12 @@
         <div class="line3"></div>
     </div>
     <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Solutions</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a [routerLink]="['/']" [routerLinkActive]="'is-active'" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+        <li><a routerLink="about" [routerLinkActive]="'is-active'">About</a></li>
+        <li><a [routerLink]="['/skills']" [routerLinkActive]="'is-active'">Skills</a></li>
+        <li><a [routerLink]="['/education']" [routerLinkActive]="'is-active'">Eduction</a></li>
+        <li><a [routerLink]="['/experience']" [routerLinkActive]="'is-active'">Experience</a></li>
+        <li><a [routerLink]="['/project']" [routerLinkActive]="'is-active'">Projects</a></li>
         <li><a href="#">Contact Us</a></li>
     </ul>
 </nav>

@@ -1,0 +1,108 @@
+.mat-mdc-dialog-title {
+    text-align: center;
+}
+.role-date {
+    display: flex;
+    place-content: center;
+}
+span.vert-divider {
+    margin: 0 20px;
+}
+
+p.exp-role {
+    color: #061890;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p.exp-time {
+    color: #7e0707;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.role-list{
+
+    margin:0 auto;
+    }
+    .role-list ul {
+    list-style-type: none;
+    
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+    counter-reset: li-counter;
+    }
+    .role-list ul li{
+    position: relative;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    background-color: #F0D756;
+    padding-left: 58px;
+    }
+    
+    .role-list a{
+    text-decoration:none;
+    color:black;
+    font-size:15px;
+    font-family: 'Raleway', sans-serif;
+    }
+    
+    .role-list li:hover{
+    box-shadow:inset -7em 0 #6CD6CC;
+    -webkit-transition: box-shadow 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 0.5s;
+    }
+    
+    .role-list ul li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #6CD6CC;
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+    content: '-'
+    }
+
+    .roles-skills{
+        display: flex;
+        gap: 40px;
+    }
+    .exp-wrapper{
+        display: flex;
+        gap:30px;
+    }
+    .projects-resp {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        max-height: 34rem;
+        overflow: auto;
+    }
+    
+    .skills ul {
+        list-style-type: none;
+    }
+    
+    .skills {
+        background: #eee2e2;
+        padding: 10px;
+        width: 25%;
+        max-height: 34rem;
+        overflow: auto;
+    }
+    
+    h3 {
+        font-weight: bold !important;
+    }

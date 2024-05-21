@@ -1,0 +1,29 @@
+<h2 mat-dialog-title>{{data.experiance.org}}</h2>
+<div class="role-date"><p class="exp-role">{{data.experiance.role}}</p>
+    <span class="vert-divider">|</span>
+    <p class="exp-time">{{data.experiance.timeline}}</p>
+</div>
+<mat-dialog-content class="mat-typography">
+    <div class="exp-wrapper">
+        <div class="projects-resp">
+            <h3>Projects & Responsibilites</h3>
+            <div class="roles-skills">
+                <div class="pr-contents role-list">
+                    <ul class="roles">
+                        <li class="roleli card" *ngFor="let role of data.experiance.roles; let i = index">
+                            {{role}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="skills" >
+            <h3>Skills Utilized</h3>
+            <ul class="skillsul">
+                <li class="skillsli" *ngFor="let skill of data.experiance.skills; let i = index">
+                    {{skill}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</mat-dialog-content>

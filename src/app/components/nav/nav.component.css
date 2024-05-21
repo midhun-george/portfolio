@@ -43,13 +43,13 @@ nav{
     text-decoration: none;
     margin: 0 0.7vw;
 }
-.nav-links li a:hover {
+.nav-links li a:hover, .is-active {
     color: #61DAFB;
 }
 .nav-links li {
     position: relative;
 }
-.nav-links li a::before {
+.nav-links li a::before, .is-active::before {
     content: "";
     display: block;
     height: 3px;
@@ -62,7 +62,9 @@ nav{
 .nav-links li a:hover::before{
     width: 80%;
 }
-
+a.is-active::before {
+    width: 80% !important;
+}
 /*Styling Buttons*/
 .login-button{
     background-color: transparent;
