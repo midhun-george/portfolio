@@ -1,1 +1,33 @@
-<p>contact works!</p>
+<div class="contact-me">
+    
+    <div class="contact-form-wrapper">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            
+                <label>Enter your fullname</label>
+                <div class="text-icon">
+                    <input placeholder="Name" [(ngModel)] ="Name">
+                    <mat-icon matSuffix>person</mat-icon>
+                </div>
+            
+                <label>Enter your Email</label>
+                <div class="text-icon">
+                    <input  placeholder="Email" type="email" [(ngModel)] ="Email">
+                    <mat-icon matSuffix>email</mat-icon>
+                </div>    
+            
+                <label>Enter your Phone Number</label>
+                <div class="text-icon">
+                    <input  placeholder="Phone" type="phone" [(ngModel)] ="Phone">
+                    <mat-icon matSuffix>phone</mat-icon>
+                </div>
+                
+                    <label>Message</label>
+                    <textarea  [(ngModel)] ="Message"></textarea>
+                
+        </div>
+        <div class="button-container">
+            <button id="save" (click)="submitForm()" mat-raised-button color="primary">Submit</button>
+        </div>
+    </div>
+</div>

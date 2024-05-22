@@ -4,6 +4,7 @@
     font-size: 0.7rem;
     width: 80%;
     margin: 50px auto;
+    position: relative;
   }
   
   .skillsGrid {
@@ -41,6 +42,11 @@
   .skillsGrid li:hover {
     background: #5d5959 !important;
   }
+  .skill-header {
+    position: absolute;
+    top: 7px;
+    color: #FFF;
+}
 
   .sectionContainer {
     background-color: #6d6666;

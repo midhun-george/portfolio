@@ -13,10 +13,16 @@ import { ContactComponent } from './components/contact/contact.component';
 import { EducationComponent } from './components/education/education.component';
 import { DialogDataExampleDialog, ExperienceComponent } from './components/experience/experience.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,8 +42,10 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
-    MatBadgeModule, MatButtonModule, MatDialogModule
-
+    MatBadgeModule, MatButtonModule, MatDialogModule, MatInputModule, MatFormFieldModule,
+    MatIconModule,MatSnackBarModule,
+    FormsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
