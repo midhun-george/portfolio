@@ -1,0 +1,49 @@
+
+.skillsContainer {
+    text-align: center;
+    font-size: 0.7rem;
+    width: 80%;
+    margin: 50px auto;
+  }
+  
+  .skillsGrid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(80px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+  }
+  
+  .skillsGrid li {
+    background-color: #684e4e;
+    padding: 5px;
+    border-radius: 15px;
+    width: 80px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+            box-shadow: 0px 4px 8px rgba(134, 151, 168, 0.1);
+    border: 1px solid #eee;
+    list-style-type: none;
+  }
+  
+  .skillsGrid li p {
+    
+    color: #FFF;
+    font-size: 12px;
+  }
+  
+  .skillsGrid li img {
+    width: 35px;
+    height: 35px;
+  }
+  .skillsGrid li:hover {
+    background: #5d5959 !important;
+  }
+
+  .sectionContainer {
+    background-color: #6d6666;
+    border-radius: 50px;
+    padding: 60px;
+  }  

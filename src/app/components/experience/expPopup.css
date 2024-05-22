@@ -4,6 +4,7 @@
 .role-date {
     display: flex;
     place-content: center;
+    border-bottom: 1px solid #ddd;
 }
 span.vert-divider {
     margin: 0 20px;

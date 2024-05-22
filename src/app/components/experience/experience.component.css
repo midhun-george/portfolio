@@ -210,3 +210,8 @@ span.company-name {
 .mat-mdc-dialog-title {
     text-align: center;
 }
+
+ul.exp {
+    height: calc(100vh - 215px);
+    overflow: auto;
+}
