@@ -23,6 +23,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,7 @@ import {MatCardModule} from '@angular/material/card';
     NgbModule,
     BrowserAnimationsModule,
     MatBadgeModule, MatButtonModule, MatDialogModule, MatInputModule, MatFormFieldModule,
-    MatIconModule,MatSnackBarModule,MatCardModule,
+    MatIconModule,MatSnackBarModule,MatCardModule,MatTabsModule,
     FormsModule
     
   ],

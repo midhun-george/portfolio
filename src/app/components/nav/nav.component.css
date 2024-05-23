@@ -27,6 +27,7 @@ nav{
 .logo img {
     height: 5rem;
     width: 10rem;
+    cursor: pointer;
 }
 
 /*Styling Links*/
