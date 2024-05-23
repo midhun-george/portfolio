@@ -215,3 +215,6 @@ ul.exp {
     height: calc(100vh - 215px);
     overflow: auto;
 }
+.exp h2 {
+    color: #fff;
+}

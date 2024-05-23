@@ -51,7 +51,7 @@ mat-label {
     opacity: 1; /* Firefox */
   }
   
-  ::-ms-input-placeholder { /* Edge 12 -18 */
+  ::-ms-input-placeholder { 
     color: #FFF !important;
   }
   .contact-form-wrapper h2 {

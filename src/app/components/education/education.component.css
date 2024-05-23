@@ -1,0 +1,46 @@
+.edu-card {
+    max-width: 400px;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  mat-card-subtitle.mat-mdc-card-subtitle {
+    display: flex;
+    place-content: space-between;
+}
+.card-content {
+    display: flex;
+    gap: 10px;
+    place-content: space-between;
+}
+
+.right-img {
+    max-height: 100px;
+    max-width: 200px;
+}
+
+.right-img img {
+    height: 100%;
+    width: 100%;
+}
+.eductions {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.eductions h2 {
+    color: #FFF;
+}
+span.sub {
+    font-size: 14px;
+}
+.exp {
+    text-align: right;
+    margin-top: 30px;
+}
+span.exp-span {
+    color: #9e9ee4;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
