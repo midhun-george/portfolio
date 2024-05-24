@@ -1,7 +1,7 @@
 .project-wrapper {
-    background: #6d6666;
+    /* background: #6d6666; */
     padding: 10px 30px;
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 .projects h2 {
@@ -13,7 +13,7 @@
 }
 
 mat-card {
-    width: 240px;
+    width: 260px;
     overflow: hidden;
     background-color: #554949;
 }
@@ -34,6 +34,8 @@ mat-card-content.mat-mdc-card-content p {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    height: 46vh;
+    overflow: auto;
 }
 .live-url {
     position: absolute;
@@ -55,6 +57,9 @@ mat-card-content.mat-mdc-card-content p {
     color: #FFF;
     height: 30px;
     font-size: 12px;
+}
+.tab-content {
+    padding-top: 5px;
 }
 /* .mat-mdc-card-content:last-child {
     padding-bottom: 12px;

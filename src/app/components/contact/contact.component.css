@@ -1,7 +1,7 @@
 .contact-form-wrapper {
     display: flex;
     flex-direction: column;
-    background: #6d6666;
+    /* background: #6d6666; */
     width: 40%;
     padding: 20px;
     margin: auto;

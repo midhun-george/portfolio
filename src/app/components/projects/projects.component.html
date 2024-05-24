@@ -1,15 +1,11 @@
 <div class="projects">
     <div class="project-wrapper">
-        <p>The following projects provide actual samples of my work that highlight my abilities and experience. Each project is briefly described with links to the deployed sites via the web icon in the top right corner of each card. It displays my aptitude for handling challenging issues, utilizing a variety of technologies, and successfully managing projects.</p>
-        <mat-tab-group animationDuration="1000ms">
+        <p>The following projects provide actual samples of my work that highlight my abilities and experience. Each project is briefly described with links to the deployed sites via the card itslef. It displays my aptitude for handling challenging issues, utilizing a variety of technologies, and successfully managing projects.</p>
+        <!-- <mat-tab-group animationDuration="1000ms">
             <mat-tab label="My Works">
                 <div class="my-sample-works">
                     <mat-card class="edu-card" title="Click to see in live" *ngFor ="let proj of selfProjects" (click) ="showInLive(proj)">
-                        <!-- <div class="example-button-container">
-                            <button mat-icon-button matTooltip="Basic" aria-label="Example icon-button with a heart icon">
-                                <mat-icon>remove_red_eye</mat-icon>
-                              </button>
-                          </div> -->
+                       
                         <mat-card-content>
                             <div class="card-content">
                                 <div class="top-img">
@@ -22,8 +18,6 @@
                                     <p style="color: #000; font-size: 11px;">{{proj.description}}</p>
                                 </div>
                                 <div class="live-url">
-                                    <!-- <a class="live-url-anchor" [href] = "proj.url" target="_blank">Live</a> -->
-                                    <!-- <button class="live-url-anchor" (click) = "showInLive(proj)" mat-button color="accent">Show in Live</button> -->
                                 </div>
                                 
                             </div>
@@ -33,6 +27,44 @@
             </mat-tab>
             <mat-tab label="Projects">Content 2</mat-tab>
             
-          </mat-tab-group>
+          </mat-tab-group> -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Samples</a></li>
+            <li><a data-toggle="tab" href="#menu1">Projects</a></li>
+
+          </ul>
+        
+          <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="my-sample-works">
+                    <mat-card class="edu-card dark-color" title="Click to see in live" *ngFor ="let proj of selfProjects" (click) ="showInLive(proj)">
+                       
+                <mat-card-content>
+                    <div class="card-content">
+                        <div class="top-img">
+                            <img [src]="proj.img">
+                        </div>
+                        <div class="project-title">
+                            <span>{{proj.name}}</span>
+                        </div>
+                        <div class="bottom-desc">
+                            <p style="color: #000; font-size: 11px;">{{proj.description}}</p>
+                        </div>
+                        <div class="tech-used">
+                            <span class="techs" *ngFor = "let tech of proj.tech">
+                                #{{tech}}
+                            </span>
+                        </div>
+                        
+                    </div>
+                </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <h3>Menu 1</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
     </div>
 </div>

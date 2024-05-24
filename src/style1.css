@@ -50,7 +50,7 @@
     line-height: 1.5;
     color: #000;
     text-align: left;
-    background-color: #fff !important; }
+    background-color:#483f3f !important; }
   
   [tabindex="-1"]:focus {
     outline: 0 !important; }
@@ -244,9 +244,7 @@ span.mdc-tab__text-label {
 
 .project-wrapper p {
   font-size: 12px;
-  margin-bottom: 5px;
-  margin-top: 5px !important;
-  color: #000;
+  margin-bottom: 0;
 }
 .mat-mdc-tab-body-content{
   max-height: 245px;
@@ -272,30 +270,3 @@ span.mdc-tab__text-label {
   background: #f1f1f1; 
 }
 
-.dark-color{
-  background-color: #ED9455 !important;
-  color: #FFF !important;
-}
-nav, .nav-color li{
-  background-color: #ED9455;
-}
-body{
-  background-color: #FFEC9E !important;
-}
-span.link-color, .resumeLink {
-  color: #328484 !important;
-}
-span.link-color:hover {
-  font-weight: bold !important;
-}
-
-.button-color{
-  background: #ED9455 !important;
-}
-
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
-  color: #FFF;
-  cursor: default;
-  background-color: #ED9455;
- 
-}
