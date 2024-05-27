@@ -200,4 +200,7 @@ nav{
     .navbar-container input[type="checkbox"]:checked ~ .logo{
         display: none;
     }
+    .navbar a{
+        color: #000 !important;
+    }
 }
