@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import * as $ from 'jquery';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -14,10 +15,10 @@ export class ProjectsComponent implements OnInit{
     {"id":"5", "name":"Shopping Kart", "description":"This is an example of an online retail website created with TypeScript and Angular using Material Design and Flex Layout. Data is stored and retrieved via a local JSON server. Need to run npm run server to start the server", "img":"assets/image/ekart.png", "url":'https://midhun-george.github.io/text-to-speech/', 'tech':['Angular', 'CSS', 'Typescript', 'Material']},
 
     ]
-
+  
 
     ngOnInit(): void {
-      
+
     }
     showInLive(item:any){
       window.open(item.url);
@@ -34,4 +35,6 @@ export class ProjectsComponent implements OnInit{
     getBGColor(){
       return this.getRandomColor();
     }
+
+    
 }

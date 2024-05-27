@@ -72,15 +72,10 @@ nav{
 }
 
 .navbar a{
-    color: #fff;
+    
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
-}
-
-.navbar a.is-active{
-    color: #117964;
-    text-decoration: overline;
 }
 
 .navbar a:hover{

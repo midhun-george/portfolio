@@ -67,3 +67,84 @@ mat-card-content.mat-mdc-card-content p {
 .mat-mdc-card-content:first-child {
     padding-top: 8px;
 } */
+
+
+/* projects slider */
+h2{
+    margin: 0;     
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;    
+}
+
+.item{
+    background: white;    
+    text-align: center;
+    height: 300px !important;
+}
+
+.carousel{
+    margin-top: 20px;
+}
+
+.bs-example{
+	margin: 20px;
+}
+
+.carousel.carousel-fade .item {
+  opacity:0;
+  filter: alpha(opacity=0); /* ie fix */
+}
+
+.carousel.carousel-fade .active.item {
+    opacity:1;
+    filter: alpha(opacity=100); /* ie fix */
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+      display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+      display: block;
+    }
+  }
+  
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-start,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+    transition-duration: 10s;
+  }
+  
+  /* display 4 */
+  @media (min-width: 768px) {
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+      transform: translateX(25%) !important;
+    }
+  
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+    }
+  
+    .carousel-item-next.carousel-item-start, .active.carousel-item-end {
+      transform: translateX(0) !important;
+    }
+  
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+      transform: translateX(-25%) !important;
+    }
+  }
