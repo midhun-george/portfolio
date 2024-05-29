@@ -107,3 +107,18 @@ p.exp-time {
     h3 {
         font-weight: bold !important;
     }
+
+    @media(max-height:768px){
+        .projects-resp{
+            width: 100% !important;
+            height: auto !important;
+            
+        }
+        .skills{
+            width: 100% !important;
+        }
+        .exp-wrapper{
+            display: flex;
+            flex-direction: column !important;
+        }
+    }

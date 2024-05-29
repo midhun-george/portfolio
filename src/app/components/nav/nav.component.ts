@@ -7,12 +7,5 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
   
-  showHamburg(e:any){
-    let navLinks:any = document.querySelector(".nav-links");
-    let links:any = document.querySelectorAll(".nav-links li");
-    navLinks.classList.toggle("open");
-    links.forEach((link:any) => {
-        link.classList.toggle("fade");
-    });
-  }
+  
 }

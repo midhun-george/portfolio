@@ -47,7 +47,7 @@ export class ExperienceComponent implements OnInit {
   },
 
   {
-    "color":"#E24A68","timeline": "11/2016 - 12/2020", "org": "Quadwave Consulting Private Limited", "role": "Software Engineer",
+    "color":"#E24A68","timeline": "11/2016 - 12/2020", "org": "Quadwave Consulting", "role": "Software Engineer",
     "roles": [" Developed and implemented a new Angular-based e-commerce platform, resulting in a 35% increase in sales and a 20% increase in customer retention.",
       "Communicated with external web services to integrate payment gateways resulting in a seamless checkout process and a 25% increase in customer satisfaction.",
       "Implemented Google and Facebook login to the website.",

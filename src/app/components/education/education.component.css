@@ -44,3 +44,14 @@ span.exp-span {
     font-weight: bold;
     cursor: pointer;
 }
+
+@media(max-width:768px){
+    .eductions{
+        display: flex;
+        flex-direction: column !important;
+        gap:10px;
+    }
+    .exp{
+        margin-top: 0px !important;
+    }
+}

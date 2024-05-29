@@ -221,3 +221,30 @@ ul.exp {
 .exp h2 {
     color: #fff;
 }
+
+@media(max-width:768px){
+    ul li .date:after{
+        width: 0 !important;
+        border: none !important;
+    }
+    ul li .date{
+        height: 60px;
+    }
+    ul:before{
+        background: transparent !important;
+    }
+    ul{
+        width: min(100rem, 98%) !important;
+    }
+
+    ul li .descr{
+        font-size: 16px !important;
+    }
+    span.link-color {
+        bottom: 0;
+    }
+    
+    span.company-name {
+        font-size: 16px !important;
+    }
+}
