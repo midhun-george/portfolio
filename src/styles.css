@@ -299,3 +299,14 @@ span.link-color:hover {
   background-color: #ED9455;
  
 }
+
+@media(max-width:768px){
+  span.link-color, .resumeLink {
+    color: #2240e7 !important;
+    font-size: 22px !important;
+    font-weight: bold;
+    text-decoration: underline;
+    position: relative;
+    bottom: 15px;
+  }
+}

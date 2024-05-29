@@ -38,3 +38,14 @@
     }
   }
   
+
+  @media(max-width:768px){
+    .about-container {
+        width: 90%;
+        margin: 20px auto;
+        font-size: 22px !important;
+    }
+    .pulse1{
+        display: none !important;
+    }
+  }

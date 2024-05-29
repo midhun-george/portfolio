@@ -70,18 +70,18 @@ mat-card-content.mat-mdc-card-content p {
 
 
 /* projects slider */
-h2{
+.item h2{
     margin: 0;     
     color: #666;
-    padding-top: 90px;
-    font-size: 52px;
+    padding-top: 30px;
+    font-size: 35px;
     font-family: "trebuchet ms", sans-serif;    
 }
 
 .item{
-    background: white;    
+    background: #f5c05a;    
     text-align: center;
-    height: 300px !important;
+    height: 235px !important;
 }
 
 .carousel{
@@ -101,50 +101,42 @@ h2{
     opacity:1;
     filter: alpha(opacity=100); /* ie fix */
 }
+.carousel-caption{
+    padding-bottom: 25px;
+}
 
 
+@media (max-width: 768px){
+    .item{
+        
+        height:500px !important;
+    }
+    
+    .carousel-caption{
+        position: relative !important;
+        left: 7px !important;
+        padding: 7px;
+        text-align: left;
+        padding-top: 25px;
+    }
+    
+}
 
 
-
-
-@media (max-width: 768px) {
-    .carousel-inner .carousel-item > div {
-      display: none;
+@media (max-width: 500px){
+    .item{
+        
+        height:500px !important;
     }
-    .carousel-inner .carousel-item > div:first-child {
-      display: block;
+    .item p{
+        
     }
-  }
-  
-  .carousel-inner .carousel-item.active,
-  .carousel-inner .carousel-item-start,
-  .carousel-inner .carousel-item-next,
-  .carousel-inner .carousel-item-prev {
-    display: flex;
-    transition-duration: 10s;
-  }
-  
-  /* display 4 */
-  @media (min-width: 768px) {
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next,
-    .carousel-item-next:not(.carousel-item-start) {
-      transform: translateX(25%) !important;
+    .carousel-caption{
+        position: relative !important;
+        left: 7px !important;
+        padding: 7px;
+        text-align: left;
+        padding-top: 25px;
     }
-  
-    .carousel-inner .carousel-item-left.active,
-    .carousel-item-prev:not(.carousel-item-end),
-    .active.carousel-item-start,
-    .carousel-item-prev:not(.carousel-item-end) {
-      transform: translateX(-25%) !important;
-    }
-  
-    .carousel-item-next.carousel-item-start, .active.carousel-item-end {
-      transform: translateX(0) !important;
-    }
-  
-    .carousel-inner .carousel-item-prev,
-    .carousel-item-prev:not(.carousel-item-end) {
-      transform: translateX(-25%) !important;
-    }
-  }
+    
+}

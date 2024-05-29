@@ -114,7 +114,9 @@ nav{
         opacity: 0;
         cursor: pointer;
     }
-
+    .navbar a{
+        color: #000 !important;
+    }
     .navbar-container .hamburger-lines{
         display: block;
         height: 28px;
@@ -173,7 +175,7 @@ nav{
 
     .logo{
         position: absolute;
-        top: 10px;
+        bottom: -4px;
         right: 15px;
         font-size: 2.5rem;
     }

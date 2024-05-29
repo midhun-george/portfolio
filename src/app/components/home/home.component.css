@@ -125,5 +125,30 @@
 
 
 
-
+@media(max-width:768px) {
+  .profileImageContainer{
+    flex-direction: column !important;
+    gap: 20px;
+    position: relative;
+    top: 15px;
+  }
+  .profileDescription p{
+    font-size: 24px !important;
+  }
+  .profileImageContainer img{
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .typings{
+    position: absolute;
+    top: 278px;
+    width: 100%;
+    color:#d2691e !important;
+    font-size: 16px !important;
+  }
+  .firstname{
+   color: #c4ebe8 !important;
+  }
+  
+}
 

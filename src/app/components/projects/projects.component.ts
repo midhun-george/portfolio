@@ -15,7 +15,17 @@ export class ProjectsComponent implements OnInit{
     {"id":"5", "name":"Shopping Kart", "description":"This is an example of an online retail website created with TypeScript and Angular using Material Design and Flex Layout. Data is stored and retrieved via a local JSON server. Need to run npm run server to start the server", "img":"assets/image/ekart.png", "url":'https://midhun-george.github.io/text-to-speech/', 'tech':['Angular', 'CSS', 'Typescript', 'Material']},
 
     ]
-  
+    
+    projects:any = [{"name":"airTMD","desc":'A platform for resource sharing, the AirTMD Application offers services and equipment to corporate research institutes, public and private schools, and company accounts in Taiwan.Google and Facebook logins have been implemented. bootstrap and angular were used to implement responsive user interfaces.ensuring compatibility with different browsers. 6 months was the duration.'
+    }, {"name":"EVA", "desc":"a mobile and web application for people with dementia. Patients will be given a mobile device, which will answer to their words by selecting from a pre-programmed list of responses. The application's web component was created using Angular, HTML, CSS, and JQuery."},
+   {"name":"Glance", "desc":"The Application is an intelligent marketing assistant that helps in gaining insights and finding actionable opportunities from Google Analytics data - All in simple, human language. The site includes a dashboard featuring various charts. The project's foundation was Angular and material design."},
+   {"name":"JTB", "desc":"Event Management Application for an MNC. This digital platform simplifies event preparation, coordination, and execution. It includes a number of functions, including scheduling, venue selection, post-event analysis, ticketing, attendee engagement, and event registration. With the use of this software, event planners can streamline their work, handle logistics more effectively, interact with attendees, and evaluate data to improve events in the future. In addition, event management software provides a centralized platform for coordination, lowering manual labor and raising accuracy, all of which contribute to the general effectiveness and success of events.   "}
+
+   ]
+
+    constructor() {
+      
+    }
 
     ngOnInit(): void {
 
@@ -23,18 +33,6 @@ export class ProjectsComponent implements OnInit{
     showInLive(item:any){
       window.open(item.url);
     }
-    getRandomColor() {
-      var letters = '0123456789ABCDEF';
-      var color = '#';
-      for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      return color;
-    }
-    
-    getBGColor(){
-      return this.getRandomColor();
-    }
-
+    images = [700, 800, 807].map((n) => `https://picsum.photos/id/${n}/900/500`);
     
 }
