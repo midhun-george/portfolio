@@ -12,14 +12,16 @@
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a [routerLink]="['/']" [routerLinkActive]="'is-active'" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
-                <li><a [routerLink]="['about']" [routerLinkActive]="'is-active'">About</a></li>
-                <li><a [routerLink]="['/skills/']" [routerLinkActive]="'is-active'">Skills</a></li>
-                <li><a [routerLink]="['/education/']" [routerLinkActive]="'is-active'">Education</a></li>
-                <li><a [routerLink]="['/experience/']" [routerLinkActive]="'is-active'">Experience</a></li>
-                <li><a [routerLink]="['/project/']" [routerLinkActive]="'is-active'">Projects</a></li>
-                <li><a [routerLink]="['/contact/']" [routerLinkActive]="'is-active'">Contact</a></li>
+                <li><a [routerLink]="['/']" [routerLinkActive]="'is-active'" [routerLinkActiveOptions]="{exact: true}" (click)="hideMenu()">Home</a></li>
+                <li><a [routerLink]="['about']" [routerLinkActive]="'is-active'" (click)="hideMenu()">About</a></li>
+                <li><a [routerLink]="['/skills/']" [routerLinkActive]="'is-active'" (click)="hideMenu()">Skills</a></li>
+                <li><a [routerLink]="['/education/']" [routerLinkActive]="'is-active'" (click)="hideMenu()">Education</a></li>
+                <li><a [routerLink]="['/experience/']" [routerLinkActive]="'is-active'" (click)="hideMenu()">Experience</a></li>
+                <li><a [routerLink]="['/project/']" [routerLinkActive]="'is-active'" (click)="hideMenu()">Projects</a></li>
+                <li><a [routerLink]="['/contact/']" [routerLinkActive]="'is-active'" (click)="hideMenu()">Contact</a></li>
             </ul>
+
+            
             
         </div>
     </div>

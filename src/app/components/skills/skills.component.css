@@ -56,13 +56,21 @@
 @media(max-width:768px){
   .skillsGrid{
     grid-column-gap: 5px;
+    grid-row-gap: 10px !important;
   }
-
+  .sectionContainer {
+    /* background-color: #6d6666; */
+    border-radius: 20px !important;
+    padding: 10px !important;
+  }
   .skillsContainer {
     text-align: center;
     font-size: 0.7rem;
     width: 95%;
-    margin: 30px auto;
+    margin: 20px auto;
     position: relative;
   }
+  .skill-header {
+    position: relative !important;
+    }
 }

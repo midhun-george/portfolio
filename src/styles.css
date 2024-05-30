@@ -309,4 +309,8 @@ span.link-color:hover {
     position: relative;
     bottom: 15px;
   }
+
+  .button-color{
+    background-color: #7b3808 !important;
+  }
 }

@@ -57,3 +57,12 @@ mat-label {
   .contact-form-wrapper h2 {
     color: #fff;
 }
+
+@media(max-width:768px){
+    .contact-form{
+        gap:10px;
+    }
+    .contact-form-wrapper{
+        width: 90% !important;
+    }
+}

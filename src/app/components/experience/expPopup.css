@@ -112,7 +112,7 @@ p.exp-time {
         .projects-resp{
             width: 100% !important;
             height: auto !important;
-            
+            max-height: 100% !important;
         }
         .skills{
             width: 100% !important;
