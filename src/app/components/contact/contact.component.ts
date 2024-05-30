@@ -15,6 +15,7 @@ export class ContactComponent {
   Email:any='';
   Phone:any='';
   Message:any='';
+  phoneNgModel:any = {};
    firebaseConfig:any = {
     apiKey: "AIzaSyBHAonDkMlYKot0oXLjwJbE5ap9oi4n2Lc",
     authDomain: "portfolioapp-e26c6.firebaseapp.com",
@@ -29,20 +30,26 @@ constructor(private _snackBar:MatSnackBar){}
 // Initialize Firebase
 app:any = initializeApp(this.firebaseConfig);
 db:any = getFirestore(this.app)
-
+isSubmitted:any = false;
   submitForm() {
+    this.isSubmitted = true;
     let contactObj = {
       "name":this.Name,
       "email":this.Email,
       "phone":this.Phone,
       "message":this.Message
     }
+    if(!this.Name || !this.Phone){
+      return;
+    }
     addDoc(collection(this.db, "contact"),contactObj).then((res:any)=>{
       if(res){
+        this.isSubmitted = false;
         this.Name = '';
         this.Phone = '';
         this.Email = '';
         this.Message = '';
+        
         this._snackBar.open("Message sent successfully",'',{
           duration: 3000
         });

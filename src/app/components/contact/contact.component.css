@@ -23,6 +23,9 @@ input, textarea {
 mat-label {
     color: #FFF;
 }
+.invalid-feedback div {
+    color: red;
+}
 .text-icon input,  textarea {
     width: 100%;
     /* height: 36px; */

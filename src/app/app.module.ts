@@ -25,6 +25,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
 import {MatTabsModule} from '@angular/material/tabs';
+import { PhoneNumberValidatorDirective } from './directives/phone-num-validator.directive';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     ContactComponent,
     EducationComponent,
     ExperienceComponent,
-    DialogDataExampleDialog
+    DialogDataExampleDialog,
+    PhoneNumberValidatorDirective
   ],
   imports: [
     BrowserModule,
