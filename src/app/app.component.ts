@@ -54,12 +54,20 @@ constructor(private gaservice:GaService){}
 
       });
      }
+    }, function(){
+      let user = {"city":'permission denied', "locality":'permission denied', "date":new Date().getTime()}
+      addDoc(collection(scope.db, "logins"),user).then((res:any)=>{
+
+      });
     })
   }catch(e){
     console.log(e);
   }
     
+  }
 
+  erroFunction(){
+    
   }
 
   createBubble():any { 
