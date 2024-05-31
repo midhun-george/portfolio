@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { initializeApp } from "firebase/app";
+import { getFirestore, setDoc, doc, addDoc, collection, getDoc, query, getDocs } from "firebase/firestore";
+import { GaService } from './services/ga.service';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +10,47 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'midhun_portfolio';
+
+  firebaseConfig:any = {
+    apiKey: "AIzaSyBHAonDkMlYKot0oXLjwJbE5ap9oi4n2Lc",
+    authDomain: "portfolioapp-e26c6.firebaseapp.com",
+    projectId: "portfolioapp-e26c6",
+    storageBucket: "portfolioapp-e26c6.appspot.com",
+    messagingSenderId: "968203103517",
+    appId: "1:968203103517:web:7f8ddf8c4f249b4d9845f4"
+};
+app:any = initializeApp(this.firebaseConfig);
+db:any = getFirestore(this.app)
+constructor(private gaservice:GaService){}
   ngOnInit(){
-  //  setInterval(()=>{
-  //   this.createBubble();
-  //  },500)
+    this.saveInteractions();
   }
+  saveInteractions(){
+    let lat:any = '';
+    let lon:any = '';
+    let scope =this;
+    navigator.geolocation.getCurrentPosition(function(params) {
+      lat = params.coords.latitude;
+      lon = params.coords.longitude;
+      if(lat && lon){
+        scope.gaservice.getLocation(lat, lon).subscribe(function(res:any){
+         console.log(res);
+         if(res){
+          let citi = res["city"];
+          let locality = res.locality;
+          let date = new Date().getTime();
+          let user = {"city":citi, "locality":locality, "date":date}
+          addDoc(collection(scope.db, "logins"),user).then((res:any)=>{
+
+          });
+         }
+        })
+     }
+    })
+    
+
+  }
+
   createBubble():any { 
     let section:any = 
       document.querySelector("Section"); 

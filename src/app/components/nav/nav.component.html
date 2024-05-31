@@ -1,6 +1,6 @@
 <nav>
-    <div class="logo">
-        <img src="assets/image/mg1.svg" alt="Logo Image" [routerLink]="''">
+    <div class="logo" >
+        <img src="assets/image/mg1.svg" [routerLink]="['/']" alt="Logo Image" >
     </div>
     
     <div class="navbar">
@@ -19,8 +19,7 @@
                 <li><a [routerLink]="['/experience/']" [routerLinkActive]="'is-active'" (click)="hideMenu()">Experience</a></li>
                 <li><a [routerLink]="['/project/']" [routerLinkActive]="'is-active'" (click)="hideMenu()">Projects</a></li>
                 <li><a [routerLink]="['/contact/']" [routerLinkActive]="'is-active'" (click)="hideMenu()">Contact</a></li>
-                <li><a [routerLink]="['/mycontact/']" [routerLinkActive]="'is-active'" (click)="hideMenu()" *ngIf="ipAddress == adminIP">My Requests</a></li>
-                
+                                
             </ul>
 
             

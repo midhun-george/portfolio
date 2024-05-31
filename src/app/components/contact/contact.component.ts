@@ -37,7 +37,8 @@ isSubmitted:any = false;
       "name":this.Name,
       "email":this.Email,
       "phone":this.Phone,
-      "message":this.Message
+      "message":this.Message,
+      "date":new Date().getTime()
     }
     if(!this.Name || !this.Phone){
       return;

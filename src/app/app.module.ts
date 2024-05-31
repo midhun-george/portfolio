@@ -14,7 +14,7 @@ import { EducationComponent } from './components/education/education.component';
 import { DialogDataExampleDialog, ExperienceComponent } from './components/experience/experience.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-
+import { HttpClientModule } from '@angular/common/http';
 
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatButtonModule} from '@angular/material/button';
@@ -51,7 +51,7 @@ import { PhoneNumberValidatorDirective } from './directives/phone-num-validator.
     MatBadgeModule, MatButtonModule, MatDialogModule, MatInputModule, MatFormFieldModule,
     MatIconModule,MatSnackBarModule,MatCardModule,MatTabsModule,
     FormsModule,
-
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
