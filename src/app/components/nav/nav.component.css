@@ -79,12 +79,13 @@ nav{
 }
 
 .navbar a.is-active{
-    color: #117964;
+    color: #a82c23;
     text-decoration: overline;
+    font-weight: bold;
 }
 
 .navbar a:hover{
-    color: #117964;
+    color: #272d2c;
 }
 
 @media (max-width: 768px){

@@ -29,5 +29,10 @@ export class NavComponent implements OnInit{
       
     }
   }
-
+  downloadResume(){
+    $("input").prop("checked", "");
+  }
+  goHome(){
+    debugger;
+  }
 }

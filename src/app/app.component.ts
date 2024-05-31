@@ -29,7 +29,9 @@ constructor(private gaservice:GaService){}
     let lat:any = '';
     let lon:any = '';
     let scope =this;
+    try{
     navigator.geolocation.getCurrentPosition(function(params) {
+      console.log(params);
       lat = params.coords.latitude;
       lon = params.coords.longitude;
       if(lat && lon){
@@ -53,6 +55,9 @@ constructor(private gaservice:GaService){}
       });
      }
     })
+  }catch(e){
+    console.log(e);
+  }
     
 
   }

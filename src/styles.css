@@ -283,7 +283,8 @@ body{
   background-color: #FFEC9E !important;
 }
 span.link-color, .resumeLink {
-  color: #328484 !important;
+  color: #a82c23 !important;
+  font-weight: bold;
 }
 span.link-color:hover {
   font-weight: bold !important;
