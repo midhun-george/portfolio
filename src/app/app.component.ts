@@ -44,13 +44,13 @@ constructor(private gaservice:GaService){}
 
           });
          }
-         else{
-          let user = {"city":'permission denied', "locality":'permission denied', "date":new Date().getTime()}
-          addDoc(collection(scope.db, "logins"),user).then((res:any)=>{
-
-          });
-         }
+         
         })
+     }else{
+      let user = {"city":'permission denied', "locality":'permission denied', "date":new Date().getTime()}
+      addDoc(collection(scope.db, "logins"),user).then((res:any)=>{
+
+      });
      }
     })
     
