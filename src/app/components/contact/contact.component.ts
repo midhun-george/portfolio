@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore, setDoc, doc, addDoc, collection, getDoc, query, getDocs } from "firebase/firestore";
+import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
@@ -10,7 +11,7 @@ import { getFirestore, setDoc, doc, addDoc, collection, getDoc, query, getDocs }
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-
+  @ViewChild('Contact') Contact:any
   Name:any='';
   Email:any='';
   Phone:any='';
@@ -56,5 +57,24 @@ isSubmitted:any = false;
         });
       }
     });
+    this.sendEmail();
+    
   }
+  public sendEmail() {
+    
+    
+    emailjs
+      .sendForm('service_qln5ue6', 'template_9bk660m', this.Contact.nativeElement as HTMLFormElement, {
+        publicKey: 'wyIFLuHLxGLkVbbhm',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', (error as EmailJSResponseStatus).text);
+        },
+      );
+  }
+
 }
